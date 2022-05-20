@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SUPERATE SAS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<header><img src="img/Logo.png"></header>
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Contatenos</a></li>
+			<li><a href="#">Prestamos</a></li>
+			<li><a href="#">Estudio De Credito</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+	</nav>
+	<h1>Estudio De Credito</h1>
+	<form action="">
+		<main>
+			<section>
+				<div style="height:870px;">
+				   <h2>1. Información Personal</h2><br>
+				   <label for="nombre1">Ingrese Su Primer Nombre</label><br>
+				   <input style="text-transform:uppercase;" type="text" id="nombre1" name="nombre1" required=""><br><br>
+				   <label for="nombre2">Ingrese Su Segundo Nombre</label><br>
+				   <input type="text" id="nombre2" name="nombre2" required="" style="text-transform:uppercase;"><br><br>
+				   <label for="apelli1">Ingrese Su Primer Apellido</label><br>
+				   <input type="text" id="apelli1" name="apelli1" required="" style="text-transform:uppercase;"><br><br>
+				   <label for="apelli2">Ingrese Su Segundo Apellido</label><br>
+				   <input type="text" id="apelli2" name="apelli2" required="" style="text-transform:uppercase;"><br><br>
+				   <label for="tipIdent">Seleccione su tipo de identificacion</label><br>
+				   <select id="tipIdent" name="tipIdent" required="">
+					  <option value="sel">Seleccione</option>
+					  <option value="cc"> Cedula de Ciudadania</option>
+					  <option value="ce">Cedula de Estranjeria</option>
+					  <option value="pas">Pasaporte</option>
+				    </select><br><br>
+				    <label for="identificacion">Ingrese Su Numero De Documento</label><br>
+				    <input type="number" id="ident" name="ident" minlength="1" maxlength="11" required=""><br><br>
+				    <label for="ocupacion">Ingrese Su Profesion U Ocupacion</label><br>
+				    <input type="text" id="ocupacion" name="ocupacion" required="" style="text-transform:uppercase;"><br><br>
+				    <label for="nacimiento">Seleccione Su Fecha De Nacimiento</label><br>
+				    <input type="date" id="nacimiento" name="nacimiento" min="1960-01-01" max="1997-01-01" required=""><br><br>
+				    <label for="email">Ingrese Su Correo Electronico</label><br>
+				    <input type="email" id="email" name="email"required="" multiple=""><br><br>
+				    <label for="telefono"> Ingrese Su Numero De Telefono</label><br>
+				    <input type="tel" id="telefono" name="telefono" placeholder="+57-3132456789" pattern="+[0-9] {2}-[0-9] {10}" required=""><br><br>
+				    <label for="direccion">Ingrese Su Direccion</label><br>
+				    <input type="text" id="direccion" name="direccion" required="" pattern="[A-Z]"><br><br>
+				    <label for="ciudad">Ingrese Su Ciudad</label><br>
+				    <input type="text" id="ciudad" name="ciudad" required="" style="text-transform:uppercase;"><br><br>
+				    <label for="barrio">Ingrese Su Barrio </label><br>
+				    <input type="text" id="barrio" name="barrio" required="" style="text-transform:uppercase;"><br><br>
+				</div>
+				<div style="height:300px;">
+				    <h2>2. Datos Bancarios</h2><br>
+				    <label for="banco">Ingrese Nombre Del Banco</label><br>
+				    <input type="text" id="banco" name="banco" required="" pattern="[A-Z]"><br><br>
+				    <label for="numcuenta">Ingrese Su Numero De Cuenta</label><br>
+				    <input type="number" id="numcuenta" name="numcuenta" minlength="16" maxlength="16" required=""><br><br>
+				</div>
+			</section>
+			<section>
+				<article style="height:910px;">
+					<h2>3. Datos Finacieros</h2><br>
+					<div>
+						<h2>3.1 Ingresos</h2><br>
+						<label for="inFijos">Ingrese Su Ingresos Fijos Mensuales</label><br>
+				        <input type="number" id="inFijos" name="inFijos" required="" min="1000"><br><br>
+				        <label for="inFijos">Ingrese Otros Ingresos</label><br>
+				        <input type="number" id="inFijos" name="inFijos" required="" min="1000"><br><br>
+				    </div>
+				    <div>
+				    	<h2>3.3 Gastos</h2><br>
+				    	<label for="gastoHogar">Ingrese Sus Gastos Frecuentes En El Hogar</label><br>
+				        <input type="number" id="gastoHogar" name="gastoHogar" required="" min="1000"><br><br>
+				        <label for="gastoAlimento">Ingrese Sus Gastos En Alimentacion</label><br>
+				        <input type="number" id="gastoAlimento" name="gastoAlimento" required="" min="1000"><br><br>
+				        <label for="gastoVivienda">Ingrese Sus Gastos En Vivienda</label><br>
+				        <input type="number" id="gastoVivienda" name="gastoVivienda" required="" min="1000"><br><br>
+				        <label for="gastoTrans">Ingrese Sus Gastos En Transporte</label><br>
+				        <input type="number" id="gastoTrans" name="gastoTrans" required="" min="1000"><br><br>
+				        <label for="gastoEdu">Ingrese Sus Gastos En Educacion</label><br>
+				        <input type="number" id="gastoEdu" name="gastoEdu" required="" min="1000"><br><br>
+				        <label for="gastoSalud">Ingrese Sus Gastos En Salud</label><br>
+				        <input type="number" id="gastoSalud" name="gastoSalud" required="" min="1000"><br><br>
+				        <label for="gastoRecrea">Ingrese Sus Gastos En Recreacions</label><br>
+				        <input type="number" id="gastoRecrea" name="gastoRecrea" required="" min="1000"><br><br>
+				        <label for="gastoDeuda">Ingrese Sus Gastos En El Pago De Deudas</label><br>
+				        <input type="number" id="gastoDeuda" name="gastoDeuda" required="" min="1000"><br><br>
+				        <label for="gastoOtros">Ingrese Otros Gastos</label><br>
+				        <input type="number" id="gastoOtros" name="gastoOtros" required="" min="1000"><br><br>
+				    </div>
+				</article>
+				<div style="height:300px;">
+					<h2>4. Documentos</h2><br>
+					<label for="Rut">Suba su RUT</label><br>
+				    <input type="file" accept=".Pdf" id="Rut" name="Rut"><br><br> 
+				    <label for="cedula">Suba su Cedula</label><br>
+				    <input type="file" accept=".Pdf" id="cedula" name="cedula"><br><br>
+					<label for="foto">Suba su foto</label><br>
+				    <input type="file" accept=".Jpg" id="foto" name="foto"><br><br>
+				</div>
+			</section>
+		</main>
+		<fieldset>
+			<legend></legend>
+			<input type="submit" value="Enviar" style="background:#8CD759; padding:5px; margin:10px;">
+			<input type="reset" value="Borrar Información" style="background:#8CD759; padding:5px; margin:10px;">
+		</fieldset>	
+	</form>
+	<footer>
+		Diseñado por:
+		<br>
+		Ashle Herrera
+		<br>
+		2233473
+	</footer>
+
+</body>
+</html>
